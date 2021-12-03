@@ -12,6 +12,8 @@
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -32,4 +34,32 @@ body {
     height: 3px;
     background-color: $main-color;
     margin: 25px auto 0 auto;
+}
+
+// ::-webkit-scrollbar {
+//     width: 7px;
+//     background-color: #f2f3d5;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background-color: $main-color;
+// }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                        transparent 25%,
+                        transparent 50%,
+                        rgba(255, 255, 255, .25) 50%,
+                        rgba(255, 255, 255, .25) 75%,
+                        transparent 75%,
+                        transparent);
 }
