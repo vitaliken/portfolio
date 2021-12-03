@@ -1,0 +1,12 @@
+.skills {
+    padding-top: 60px;
+    &__items {
+        display: grid;
+        grid-template-columns: 270px 270px 270px 270px;
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+        grid-auto-rows: minmax(245px, auto);
+        column-gap: 13px;
+        row-gap: 13px;
+        border-color: black;
+    }
+}
