@@ -1,3 +1,4 @@
+//menu
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     closeElem = document.querySelector('.menu__close');
@@ -18,3 +19,14 @@ console.log(counters)
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+//checkbox
+var checker = document.getElementById('checkSubmit');
+var sendbtn = document.getElementById('sendMessage');
+checker.onchange = function() {
+    if(this.checked){
+        sendbtn.disabled = false;
+    } else {
+        sendbtn.disabled = true;
+    }
+};
