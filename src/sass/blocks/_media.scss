@@ -27,13 +27,33 @@
     .skills {
         &__items {
             grid-template-columns: repeat(auto-fit, 270px);
-            justify-content: center;
+            justify-content: space-around;
         }
         &__ratings {
             grid-template-columns: repeat(auto-fit, 350px);
             grid-auto-rows: minmax(70px, auto);
             justify-content: center;
             column-gap: 130px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 310px 523px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2,248px);
         }
     }
 }
@@ -71,6 +91,21 @@
     .skills {
         &__items {
             padding: 0 20px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 340px);
+            padding: 0;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0 15px;
+            grid-template-columns: 0px 100%;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2,330px);
         }
     }
 }
@@ -121,6 +156,25 @@
             margin-top: 60px;
             grid-template-columns: 350px;
             column-gap: 20px;
+        }
+    }
+    .portfolio {
+        padding-top: 60px;
+    }
+    .price {
+        padding-top: 60px;
+        &__wrapper {
+            margin-top: 30px;
+            justify-content: space-around;
+        }
+    }
+    .contacts {
+        padding-top: 60px;
+        &__wrapper {
+            padding: 0 15px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2,240px);
         }
     }
 }
@@ -188,6 +242,45 @@
         &__ratings {
             grid-template-columns: 270px;
             column-gap: 20px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+        }
+        .price__count, .price__type {
+            font-size: 13px;
+        }
+    }
+    .contacts {
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 78%;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+        &__social {
+            text-align: center;
+        }
+        &__link {
+            margin: 15px;
         }
     }
 }
