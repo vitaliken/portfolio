@@ -182,7 +182,7 @@
 @media (max-width: 576px) {
     .container {
         max-width: 300px;
-        padding: 0 10px;
+        padding: 0 4px;
     }
     .title {
         &_fz48 {
@@ -213,6 +213,7 @@
     }
     .about {
         &__wrapper {
+            padding: 5px;
             grid-template: 340px auto auto / 100%;
         }
         &__skills {
@@ -225,7 +226,8 @@
         }
         &__item {
             &:before {
-                width: 20px;
+                width: 15px;
+                left: 5px;
             }
             &-icon {
                 left: 20px;
@@ -235,6 +237,20 @@
             }
             &-body {
                 padding: 12px 0 0 22px;
+            }
+        }
+        &__column {
+            &-title{
+                &:before {
+                    left: -3px;
+                }
+            }
+            ul {
+                li {
+                    &:after {
+                        left: 4px;
+                    }
+                }
             }
         }
     }
